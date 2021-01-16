@@ -10,17 +10,18 @@
 <body>
 
     <header>
-        <nav class="menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Stanford</a></li>
-              <li><a href="#">UCSD</a></li>
-              <li><a href="#">TU Munich</a></li>
-            </ul>
-          </nav>
+        <div class="navbar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Stanford</a></li>
+                    <li><a href="#">UCSD</a></li>
+                    <li><a href="#">TU Munich</a></li>
+                </ul>
+            </nav>
+        </div>
         <h1> Welcome to my website</h1>
     </header>
-
 
     <main>
         <section>
@@ -31,9 +32,9 @@
                 <code>systems engineering</code> approaches to problems. I am primarily interested developing highly
                 engineered products
                 that are suitable for <i>constraining regulatory environments.</i> I focus on the application domains of
-                <span class="focusDomain">emergency response systems,</span> 
-                <span class="focusDomain">healthcare delivery,</span> 
-                <span class="focusDomain">and financial services.</span>  
+                <span class="focusDomain">emergency response systems,</span>
+                <span class="focusDomain">healthcare delivery,</span>
+                <span class="focusDomain">and financial services.</span>
                 <br /> <br />
                 I have a range of experience in other fields including
             </p>
@@ -59,11 +60,6 @@
                 Outside of work or school, I enjoy surfing, skateboarding, and playing the guitar.
             </p>
 
-            <figure>
-                <img src="uspto-fig1.PNG" alt="Figure 1 of Emergency Response System - US10595183B2" />
-                <figcaption>This is Figure 1 in my patent.</figcaption>
-            </figure>
-
         </section>
 
         <aside>
@@ -76,52 +72,131 @@
 
         <hr />
 
-        
-    <section>
-        <h2>Stuff I Think is Cool</h2>
 
-        <h3> Check out this animation I made at Stanford Arts</h3>
-        <video autoplay="" loop=""
-            style="background-image:url(&quot;https://assets-global.website-files.com/5f18b6a1fa0d9a6a96e46eeb/5fc747c12990df195afc7b99_waysToChange-poster-00001.jpg&quot;)"
-            muted="" playsinline="">
-            <source
-                src="https://assets-global.website-files.com/5f18b6a1fa0d9a6a96e46eeb/5fc747c12990df195afc7b99_waysToChange-transcode.mp4">
-            <source
-                src="https://assets-global.website-files.com/5f18b6a1fa0d9a6a96e46eeb/5fc747c12990df195afc7b99_waysToChange-transcode.webm">
-        </video>
+        <section>
+            <h2>Stuff I Think is Cool</h2>
+
+            <h3> Check out this animation I made at Stanford Arts</h3>
+            <video autoplay="" loop=""
+                style="background-image:url(&quot;https://assets-global.website-files.com/5f18b6a1fa0d9a6a96e46eeb/5fc747c12990df195afc7b99_waysToChange-poster-00001.jpg&quot;)"
+                muted="" playsinline="">
+                <source
+                    src="https://assets-global.website-files.com/5f18b6a1fa0d9a6a96e46eeb/5fc747c12990df195afc7b99_waysToChange-transcode.mp4">
+                <source
+                    src="https://assets-global.website-files.com/5f18b6a1fa0d9a6a96e46eeb/5fc747c12990df195afc7b99_waysToChange-transcode.webm">
+            </video>
 
 
-        <h3> Check out my employer's website</h3>
-        <iframe src="https://nakamurapartners.com/" style="height: 90vh; width: 90%; border: none;"></iframe>
+            <h3> Check out my employer's website</h3>
+            <iframe src="https://nakamurapartners.com/" style="height: 90vh; width: 90%; border: none;"></iframe>
 
-    </section>
+        </section>
 
-    <hr />
+        <hr />
 
         <section>
             <h2>Compliance with CSE 110 (WI21) Assignment Requirements</h2>
-            <p>This section is comprised of various stylized elements that may not utilized elsewhere of the webpage,
+            <p>This section is comprised of various stylized elements that may not utilized elsewhere on the webpage,
                 and
                 that exist only to comply with CSE 110 (WI21) assignment requirements for this webpage.</p>
 
-            <h3>Images and Multimedia</h3>
-            <picture>
-            </picture>
-            <audio>
-            </audio>
-            <canvas>
-            </canvas>
-            <svg></svg>
+            <pre>
+                    Y   E   U       D   L   T   S 
+                      E   T   S       E   E   U   
+            </pre>
 
             <h3>Forms</h3>
+            <form>
+                <label for="name">Enter your name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="university">Enter the university you go/went to:</label><br>
+                <input type="text" id="university" name="university">
+
+                <br />
+
+                <label for="cars">Choose your favorite fish:</label>
+                <select name="fish" id="fish">
+                    <optgroup label="Color Fish">
+                        <option value="red-fish">red fish</option>
+                        <option value="blue-fish">blue fish</option>
+                    </optgroup>
+                    <optgroup label="Number Fish">
+                        <option value="1-fish">1 fish</option>
+                        <option value="2-fish">2 fish</option>
+                    </optgroup>
+                </select>
+            </form>
 
             <h3>Table</h3>
+            <p> We compare the Big Four accounting firms by revenue. By this measure, Deloitte is the largest accounting
+                firm in the world.</p>
+            <table>
+                <colgroup>
+                    <col />
+                    <col span="3" class="FY" style="background-color: skyblue;" />
+                </colgroup>
+
+                <tr>
+                    <th><strong><em>Big 4 Accounting Firms</em></strong></th>
+                    <th>fiscal 2019</th>
+                    <th>fiscal 2018</th>
+                    <th>fiscal 2017</th>
+                </tr>
+                <tr>
+                    <td><strong>Deloitte</strong></td>
+                    <td>46.2B</td>
+                    <td>43.2B</td>
+                    <td>38.8B</td>
+                </tr>
+                <tr>
+                    <td><strong>PwC</strong></td>
+                    <td>42.4B</td>
+                    <td>41.3B</td>
+                    <td>37.7B</td>
+                </tr>
+                <tr>
+                    <td><strong>EY</strong></td>
+                    <td>36.4B</td>
+                    <td>34.8B</td>
+                    <td>31.4B</td>
+                </tr>
+                <tr>
+                    <td><strong>KPMG</strong></td>
+                    <td>29.8B</td>
+                    <td>28.96B</td>
+                    <td>26.4B</td>
+                </tr>
+
+            </table>
+
+            <h3>Images and Multimedia</h3>
+            <h4>A Figure</h4>
+            <figure>
+                <picture>
+                    <img src="uspto-fig1.PNG" alt="Figure 1 of Emergency Response System - US10595183B2" />
+                </picture>
+                <figcaption>This is Figure 1 in my patent.</figcaption>
+            </figure>
+
+
+            <h4>Audio</h4>
+            <audio controls>
+                <source src="https://ligmabukkit.s3-us-west-1.amazonaws.com/30s+Hold+Music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h4>A Canvas</h4>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                An alternative text describing what your canvas displays.
+            </canvas>
+
+            <h4>An SVG - A Circle</h4>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
 
             <h3>Interactive Elements</h3>
-            <pre>
-                Y   E   U       D   L   T   S 
-                  E   T   S       E   E   U   
-            </pre>
+
 
         </section>
 
