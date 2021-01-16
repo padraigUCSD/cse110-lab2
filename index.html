@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>padraigUCSD</title>
-    <!-- <link TODO /> -->
+    <link rel="icon" href="https://ligmabukkit.s3-us-west-1.amazonaws.com/small+QED.png">
 </head>
 
 <body>
@@ -60,6 +60,19 @@
                 Outside of work or school, I enjoy surfing, skateboarding, and playing the guitar.
             </p>
 
+
+            <details>
+                <summary>How To Contact Me</summary>
+                <p>I am available to contribute to certain academic projects subject to the approval of my current
+                    employer (not UCSD affiliated). If you are interested in my non-UCSD commerical work, use my
+                    commercial contact information below to make an inquiry. My academic and
+                    commercial contact information is provided below.</p>
+                    <h4>Academic:</h4>
+                    <p>pmacgaba@ucsd.edu</p>
+                    <h4>Commercial:</h4>
+                    <p>padraig.macgabann@nakamurapartners.com</p>
+                    <p>Tel: +1 (310) 861-6996 ext. 100</p>
+            </details>
         </section>
 
         <aside>
@@ -107,30 +120,60 @@
 
             <h3>Forms</h3>
             <form>
-                <label for="name">Enter your name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="university">Enter the university you go/went to:</label><br>
-                <input type="text" id="university" name="university">
 
-                <br />
+                <fieldset>
+                    <legend>Padraig's Awesome Form</legend>
+                    <label for="name">Enter your name:</label><br />
+                    <input type="text" id="name" name="name"><br />
+                    <label for="university">Enter the university you go/went to:</label><br />
+                    <input type="text" id="university" name="university">
 
-                <label for="cars">Choose your favorite fish:</label>
-                <select name="fish" id="fish">
-                    <optgroup label="Color Fish">
-                        <option value="red-fish">red fish</option>
-                        <option value="blue-fish">blue fish</option>
-                    </optgroup>
-                    <optgroup label="Number Fish">
-                        <option value="1-fish">1 fish</option>
-                        <option value="2-fish">2 fish</option>
-                    </optgroup>
-                </select>
+                    <br />
+                    <br />
+
+                    <label for="cars">Choose your favorite fish:</label>
+                    <select name="fish" id="fish">
+                        <optgroup label="Color Fish">
+                            <option value="red-fish">red fish</option>
+                            <option value="blue-fish">blue fish</option>
+                        </optgroup>
+                        <optgroup label="Number Fish">
+                            <option value="1-fish">1 fish</option>
+                            <option value="2-fish">2 fish</option>
+                        </optgroup>
+                    </select>
+
+                    <br />
+                    <br />
+
+                    <label for="story">Please write a compelling short story:</label> <br />
+                    <textarea></textarea>
+
+                    <br />
+                    <br />
+
+                    <label for="lucky-number">Choose a lucky number from the list below:</label> <br />
+                    <input list="lucky-numbers" name="lucky-number" id="lucky-number">
+                    <datalist id="lucky-numbers">
+                        <option value="0">
+                        <option value="1">
+                        <option value="7">
+                        <option value="42">
+                        <option value="3">
+                    </datalist>
+
+
+                </fieldset>
+
+                <button type="submit-button">Submit</button>
+
             </form>
 
             <h3>Table</h3>
-            <p> We compare the Big Four accounting firms by revenue. By this measure, Deloitte is the largest accounting
-                firm in the world.</p>
+            
             <table>
+                <caption> We compare the Big Four accounting firms by revenue. By this measure, Deloitte is the largest accounting
+                    firm in the world.</caption>
                 <colgroup>
                     <col />
                     <col span="3" class="FY" style="background-color: skyblue;" />
@@ -196,6 +239,10 @@
             </svg>
 
             <h3>Interactive Elements</h3>
+
+            <template>
+                <h4> I am super secret u will never see me heehoo</h4>
+            </template>
 
 
         </section>
